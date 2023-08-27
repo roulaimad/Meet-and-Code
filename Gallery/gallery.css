@@ -31,27 +31,27 @@
 }
 #album1 {
   grid-area: album1;
-  background-image: url("randomPIC.png");
+  background-image: url("./images/album1/thumbnails/img1.JPG");
 }
 #album2 {
   grid-area: album2;
-  background-image: url("./images/album2/thumbnails/img1.jpg");
+  background-image: url("./images/album2/thumbnails/img1.JPG");
 }
 #album3 {
   grid-area: album3;
-  background-image: url("../images/album3/thumbnails/img1.jpg");
+  background-image: url("./images/album3/thumbnails/img1.JPG");
 }
 #album4 {
   grid-area: album4;
-  background-image: url("images/album4/thumbnails/img1.jpg");
+  background-image: url("./images/album4/thumbnails/img1.JPG");
 }
 #album5 {
   grid-area: album5;
-  background-image: url("/Gallery/images/album5/thumbnails/img1.JPG");
+  background-image: url("./Gallery/images/album5/thumbnails/img1.JPG");
 }
 #album6 {
   grid-area: album6;
-  background-image: url("./images/album6/thumbnails/img1.jpg");
+  background-image: url("./images/album6/thumbnails/img1.JPG");
 }
 .gallery-album {
   width: 100%;
