@@ -47,7 +47,7 @@
 }
 #album5 {
   grid-area: album5;
-  background-image: url("./Gallery/images/album5/thumbnails/img1.JPG");
+  background-image: url("./images/album5/thumbnails/img1.JPG");
 }
 #album6 {
   grid-area: album6;
