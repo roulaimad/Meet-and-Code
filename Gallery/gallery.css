@@ -29,7 +29,6 @@
   font-family: Roboto;
   text-transform: uppercase;
 }
-
 #album1 {
   grid-area: album1;
   background-image: url("./images/album1/thumbnails/img1.jpg");
