@@ -31,7 +31,7 @@
 }
 #album1 {
   grid-area: album1;
-  background-image: url("../images/album1/thumbnails/img1.jpg");
+  background-image: url("./images/album1/thumbnails/img1.jpg");
 }
 #album2 {
   grid-area: album2;
