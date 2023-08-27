@@ -32,27 +32,27 @@
 
 #album1 {
   grid-area: album1;
-  background-image: url("images/album1/thumbnails/img1.jpg");
+  background-image: url("./images/album1/thumbnails/img1.jpg");
 }
 #album2 {
   grid-area: album2;
-  background-image: url("images/album2/thumbnails/img1.jpg");
+  background-image: url("./images/album2/thumbnails/img1.jpg");
 }
 #album3 {
   grid-area: album3;
-  background-image: url("images/album3/thumbnails/img1.jpg");
+  background-image: url("./images/album3/thumbnails/img1.jpg");
 }
 #album4 {
   grid-area: album4;
-  background-image: url("images/album4/thumbnails/img1.jpg");
+  background-image: url("./images/album4/thumbnails/img1.jpg");
 }
 #album5 {
   grid-area: album5;
-  background-image: url("images/album5/thumbnails/img1.jpg");
+  background-image: url("./images/album5/thumbnails/img1.jpg");
 }
 #album6 {
   grid-area: album6;
-  background-image: url("images/album6/thumbnails/img1.jpg");
+  background-image: url("./images/album6/thumbnails/img1.jpg");
 }
 .gallery-album {
   width: 100%;
@@ -148,7 +148,7 @@
   right: -20px;
 }
 .img-btn-next:hover,
-.img-btn-prev:hover  {
+.img-btn-prev:hover {
   opacity: 0.7;
   scale: 1.1;
 }
@@ -218,4 +218,3 @@
   /* background-color: rgb(241, 0, 0); */
   position: relative;
 }
-
