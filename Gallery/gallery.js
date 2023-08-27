@@ -39,7 +39,7 @@ if (galleryImages) {
 
       newImg.setAttribute(
         "src",
-        "Gallery/images/" + albumId + "/images/img1.jpg"
+        "Gallery/images/" + albumId + "/images/img1.JPG"
       );
       newImg.setAttribute("id", "current-img");
 
@@ -57,7 +57,7 @@ if (galleryImages) {
 
         smallImg.setAttribute(
           "src",
-          "Gallery/images/" + albumId + "/thumbnails/img" + i + ".jpg"
+          "Gallery/images/" + albumId + "/thumbnails/img" + i + ".JPG"
         );
         smallImg.setAttribute("id", "smallImg" + i);
         if (i == currentImgIndex) {
@@ -75,7 +75,7 @@ if (galleryImages) {
         imgs.forEach((img) => {
           img.addEventListener("click", () => {
             let str = img.getAttribute("src");
-            let regex = /img(\d+)\.jpg/;
+            let regex = /img(\d+)\.JPG/;
             let match = str.match(regex);
             digit = match[1];
             if (digit) {
@@ -163,7 +163,7 @@ function changeImg(changeDir) {
   currentImgIndex = calcNewImg;
   newImg.setAttribute(
     "src",
-    "Gallery//images/" + albumId + "/images/img" + calcNewImg + ".jpg"
+    "Gallery//images/" + albumId + "/images/img" + calcNewImg + ".JPG"
   );
   newImg.setAttribute("id", "current-img");
   newImg.onload = function () {
