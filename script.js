@@ -41,7 +41,7 @@ function updateDots(counter) {
   dots[counter].classList.add("active");
 }
 // Countdown JS ====================================
-var countDownDate = new Date("Sep 3, 2023 00:00:00").getTime();
+var countDownDate = new Date("Oct 3, 2023 00:00:00").getTime();
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
