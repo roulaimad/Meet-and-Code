@@ -138,7 +138,7 @@ if (isset($_POST["nsubmit"])) {
               </div>
               <div class="launch-time">
                 <div class="dhms">
-                  <p id="days">00</p>
+                  <p id="days">10</p>
                   <div>Days</div>
                 </div>
 
