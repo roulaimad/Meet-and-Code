@@ -5,6 +5,13 @@ const nextButton = document.querySelector("#next");
 const prevButton = document.querySelector("#prev");
 let cardPreview = Math.round(carousel.offsetWidth / firstCardWidth);
 
+console.log("carousel.scrollLeft = ");
+console.log(carousel.scrollLeft);
+console.log("carousel.scrollWidth = ");
+console.log(carousel.scrollWidth);
+console.log("carousel.offsetWidth = ");
+console.log(carousel.offsetWidth);
+
 // ================= UPDATE THE CARD WIDTH ============================
 function handleResize() {
   firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -12,19 +19,25 @@ function handleResize() {
 }
 // =============BUTTONS ( NEXT, PREVIOUS)==============================
 nextButton.addEventListener("click", function () {
-  console.log("==================================");
-  console.log("NEXT button clicked");
-  console.log("carousel.scrollLeft");
-  console.log(carousel.scrollLeft);
   carousel.scrollLeft += firstCardWidth;
+  console.log("carousel.scrollLeft = ");
+  console.log(carousel.scrollLeft);
+  console.log("scrollWidth = ");
+  console.log(carousel.scrollWidth);
+  console.log("carousel.offsetWidth = ");
+  console.log(carousel.offsetWidth);
+  console.log("-------------------------");
+
 });
 prevButton.addEventListener("click", function () {
-  console.log("==================================");
-  console.log("PREV button clicked");
-  console.log("carousel.scrollLeft");
-  console.log(carousel.scrollLeft);
-  console.log("Prev button clicked");
   carousel.scrollLeft -= firstCardWidth;
+  console.log("carousel.scrollLeft = ");
+  console.log(carousel.scrollLeft);
+  console.log("scrollWidth = ");
+  console.log(carousel.scrollWidth);
+  console.log("carousel.offsetWidth = ");
+  console.log(carousel.offsetWidth);
+  console.log("-------------------------");
 });
 
 // ===================( Infinite Scrolling) ===============================
@@ -40,7 +53,15 @@ carouselChildren.slice(0, cardPreview).forEach((card) => {
 });
 const infiniteScroll = () => {
   if (carousel.scrollLeft === 0) {
-    console.log("scr = 0");
+    console.log("==================================================");
+    console.log("scrollWidth = ");
+    console.log(carousel.scrollWidth);
+    console.log("carousel.offsetWidth = ");
+    console.log(carousel.offsetWidth);
+    console.log("carousel.scrollWidth - 2 * carousel.offsetWidth = ");
+    console.log(carousel.scrollWidth - 2 * carousel.offsetWidth);
+    console.log("==================================================");
+
     carousel.classList.add("stopTransition");
     carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
     carousel.classList.remove("stopTransition");
